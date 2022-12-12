@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array for multi dimention</title>
+</head>
+<body>
+    <script>
+        var a=[[01,"india","gujarat"],
+               [02,"canada","brampton"],
+               [03,"us","newyork"],
+                 [04,"uk","london"],
+                [05,"india","mumbai"],
+                 [06,"africa","uganda"]]
+
+                 document.write("<table border='1px'>");
+                 for(var x=0;x<=5;x++)
+                 {
+                    document.write("<tr>");
+                    for (var y=0;y<=2;y++)
+                 {
+                 document.write("<td>"+a[x][y]+"<td>");
+                 }
+                        document.write("</tr>");
+                        // document.write("<br>")
+                    }
+                    document.write("</table>");
+    </script>
+    
+</body>
+</html>
