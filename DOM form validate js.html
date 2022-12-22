@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM form validation</title>
+</head>
+<body>
+    <form method="post" name="myform" onsubmit="return validateform()">
+    first Name<input type="text" name="name"><br>
+    password<input type="password" name="pwd">
+    <input type="submit">
+</form>
+    <script>
+        function validateform()
+        {
+            var name=document.myform.name.value;
+            var password=document.myform.pwd.value;
+            if(name==null||name=="")
+            {
+                alert("Name can not be blank");
+                return false;
+            }
+            else if(password.lenth<6)
+            {
+                alert("password must be atleast of 6 character long");
+                return false;
+            }
+        }
+    </script>
+    <!-- <form method="post" name="my form" onsubmit="return validationform()"> -->
+        <!-- first Name<input type="text" name="name"><br> -->
+        <!-- password<input type="password" name="pwd"> -->
+        <!-- <input type="submit"> -->
+    <!-- </form> -->
+    
+</body>
+</html>
